@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#vinod1").click(function(){
+    $("img").before("<b>Before</b>");
+  });
+
+  $("#vinod2").click(function(){
+    $("img").after("<i>After</i>");
+  });
+});
+</script>
+</head>
+<body>
+
+<img src="doll.jpg" alt="jQuery" width="100" height="140"><br><br>
+
+<button id="vinod1">Insert before</button>
+<button id="vinod2">Insert after</button>
+
+</body>
+</html>
